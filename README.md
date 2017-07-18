@@ -8,7 +8,7 @@ Pre-requisites
   * library(devtools)
   * install_github('tcederquist/ermhdfs')
 
-**erm.hdfsWrite(output, hdfsFilename, append=FALSE)**
+# erm.hdfsWrite(output, hdfsFilename, append=FALSE)
 
 * output = any command that outputs to the console or string
   * fwrite(mydatatable)
@@ -21,7 +21,7 @@ Pre-requisites
 
      erm.hdfsWrite(fwrite(mydatatable), "/user/tcederquist/mysample.csv")
 
-**erm.hdfsReadP(hdfsFilename)**
+# erm.hdfsReadP(hdfsFilename)
 Creates a string that can be used by any pipe friendly function to stream the contents of the html file.
 
 * hdfsFilename = path the file to read
@@ -29,7 +29,7 @@ Creates a string that can be used by any pipe friendly function to stream the co
 
      dat.df3<-fread(erm.hdfsReadP("/user/tcederquist/tim_pop_comm_14_5"),sep=",", header=TRUE, showProgress=F)
      
-**erm.hdfsDelete(hdfsFilename)**
+# erm.hdfsDelete(hdfsFilename)
 Delete removes the specified file from the supplied HDFS folder
 
 * hdfsFilename = Full path to the hdfs file to remove
