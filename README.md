@@ -7,6 +7,8 @@ Pre-requisites
 * Installation
   * library(devtools)
   * install_github('tcederquist/ermhdfs')
+* Run
+  * library(ermhdfs)
 
 # erm.hdfsWrite(output, hdfsFilename, append=FALSE)
 
